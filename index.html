@@ -1,10 +1,282 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>Kishore Portfolio</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kishore Kumar | Portfolio</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#0f172a;
+    color:white;
+}
+
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 8%;
+    background:rgba(255,255,255,0.05);
+    backdrop-filter:blur(10px);
+    position:sticky;
+    top:0;
+}
+
+.logo{
+    font-size:28px;
+    font-weight:700;
+    color:#38bdf8;
+}
+
+nav ul{
+    display:flex;
+    gap:25px;
+    list-style:none;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+}
+
+.hero{
+    min-height:90vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:20px;
+}
+
+.hero h1{
+    font-size:60px;
+}
+
+.hero span{
+    color:#38bdf8;
+}
+
+.hero p{
+    margin-top:15px;
+    font-size:20px;
+    color:#cbd5e1;
+}
+
+.btn{
+    display:inline-block;
+    margin-top:25px;
+    padding:12px 25px;
+    background:#38bdf8;
+    color:black;
+    text-decoration:none;
+    border-radius:10px;
+    font-weight:600;
+}
+
+section{
+    padding:80px 8%;
+}
+
+.section-title{
+    text-align:center;
+    font-size:40px;
+    margin-bottom:40px;
+    color:#38bdf8;
+}
+
+.about{
+    text-align:center;
+    max-width:800px;
+    margin:auto;
+}
+
+.skills{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+    gap:20px;
+}
+
+.skill{
+    background:#1e293b;
+    padding:25px;
+    border-radius:15px;
+    text-align:center;
+    transition:0.3s;
+}
+
+.skill:hover{
+    transform:translateY(-8px);
+}
+
+.projects{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:25px;
+}
+
+.project{
+    background:#1e293b;
+    border-radius:15px;
+    padding:20px;
+}
+
+.project h3{
+    color:#38bdf8;
+    margin-bottom:10px;
+}
+
+.stats{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:20px;
+}
+
+.stat{
+    background:#1e293b;
+    padding:25px;
+    width:220px;
+    text-align:center;
+    border-radius:15px;
+}
+
+.stat h2{
+    color:#38bdf8;
+}
+
+.contact{
+    text-align:center;
+}
+
+footer{
+    text-align:center;
+    padding:20px;
+    background:#020617;
+}
+</style>
 </head>
+
 <body>
-<h1>Kishore Kumar</h1>
-<p>ECE Student</p>
+
+<nav>
+    <div class="logo">KK</div>
+    <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
+
+<section class="hero">
+    <div>
+        <h1>Hi, I'm <span>Kishore Kumar</span></h1>
+        <p>ECE Student | Python Developer | SQL | Data Analytics | AI Enthusiast</p>
+        <a href="#" class="btn">Download Resume</a>
+    </div>
+</section>
+
+<section id="about">
+    <h2 class="section-title">About Me</h2>
+    <div class="about">
+        <p>
+            I'm an Electronics and Communication Engineering student graduating in 2027.
+            I enjoy solving problems using Python, SQL, Data Analytics and AI technologies.
+            Currently improving my DSA, SQL and project development skills for placements.
+        </p>
+    </div>
+</section>
+
+<section id="skills">
+    <h2 class="section-title">Skills</h2>
+
+    <div class="skills">
+        <div class="skill">Python</div>
+        <div class="skill">SQL</div>
+        <div class="skill">Power BI</div>
+        <div class="skill">Excel</div>
+        <div class="skill">Pandas</div>
+        <div class="skill">DSA</div>
+        <div class="skill">GitHub</div>
+        <div class="skill">Machine Learning</div>
+    </div>
+</section>
+
+<section>
+    <h2 class="section-title">Achievements</h2>
+
+    <div class="stats">
+        <div class="stat">
+            <h2>74+</h2>
+            <p>LeetCode Problems</p>
+        </div>
+
+        <div class="stat">
+            <h2>50+</h2>
+            <p>SQL Problems</p>
+        </div>
+
+        <div class="stat">
+            <h2>3</h2>
+            <p>Major Projects</p>
+        </div>
+    </div>
+</section>
+
+<section id="projects">
+    <h2 class="section-title">Projects</h2>
+
+    <div class="projects">
+
+        <div class="project">
+            <h3>AI Sign Language Recognition</h3>
+            <p>
+                Real-time sign language detection using Python,
+                OpenCV and MediaPipe.
+            </p>
+        </div>
+
+        <div class="project">
+            <h3>Resume Analyzer AI</h3>
+            <p>
+                AI-powered resume evaluation and interview
+                question generation system.
+            </p>
+        </div>
+
+        <div class="project">
+            <h3>Face Recognition Attendance</h3>
+            <p>
+                Automated attendance management using
+                computer vision.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+<section id="contact">
+    <h2 class="section-title">Contact</h2>
+
+    <div class="contact">
+        <p>Email: yourmail@gmail.com</p>
+        <p>GitHub: github.com/yourusername</p>
+        <p>LinkedIn: linkedin.com/in/yourprofile</p>
+    </div>
+</section>
+
+<footer>
+    © 2026 Kishore Kumar | Portfolio
+</footer>
+
 </body>
 </html>
